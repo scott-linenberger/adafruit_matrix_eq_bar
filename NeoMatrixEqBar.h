@@ -130,10 +130,10 @@ class NeoMatrixEqBar
     setAscending(boolean);
     /* sets the EQ bar's timing */
     setTiming(int);
-
-  private:
     /*Adafruit's Wheel code used for generating color columns */
     uint32_t colorWheel(byte);
+
+  private:
     /* initializes the default colors */
     initColors();
     /* draws the current EQ bar state to the matrix */
