@@ -84,8 +84,8 @@ void loop()
   //create a changing array of colors based on the color count
   uint32_t colors[] = {
     eqBars[0].colorWheel(colorCount + 60),
-    eqBars[0].colorWheel(colorCount + 50),
     eqBars[0].colorWheel(colorCount + 40),
+    eqBars[0].colorWheel(colorCount + 20),
     eqBars[0].colorWheel(colorCount)    
   };
 
