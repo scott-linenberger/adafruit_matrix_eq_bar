@@ -149,21 +149,9 @@ uint32_t NeoMatrixEqBar::colorWheel(byte WheelPos)
 }
 
 /* Sets an array of colors to be used as the EQ bar's colors */
-NeoMatrixEqBar::setColors(uint32_t _colors[])
+NeoMatrixEqBar::setColors(uint32_t *_colors)
 {
-    int numColors = sizeof(_colors);
-
-    /* if no colors have been provided, return */
-    if (numColors == 0)
-    {
-        return;
-    }
-
-    /* copy colors into our colors array */
-    for (int i = 0; i < sizeof(_colors); i++)
-    {
-        colors[i] = _colors[i];
-    }
+  colors = _colors;
 }
 
 /* Sets the color of the EqBar using Adafruit's Wheel code' */

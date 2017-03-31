@@ -103,7 +103,7 @@ class NeoMatrixEqBar
        second pixel on the EQ bar, etc... This array is initialized to default colors. Defaults 32 slots
        for 32 colors. Note: an EQ Bar of size 4 will only use array colors 0 - 3, NOT all 32 colors!
     */
-    uint32_t colors[32];
+    uint32_t *colors;
 
   public:
     /* No args Constructor */
@@ -121,7 +121,7 @@ class NeoMatrixEqBar
     /* use a color wheel value to set the colors of the eq bar */
     setColor(byte);
     /* use to set an array of colors as your EQ bar's colors */
-    setColors(uint32_t[]);
+    setColors(uint32_t *);
     /* use to set the minimum height of the EQ bar */
     setMinHeight(int);
     /* use to set the maximum height of the EQ bar */
