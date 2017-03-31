@@ -5,12 +5,20 @@
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
+NeoMatrixEqBar KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-
-setColor    KEYWORD2
+tick            KEYWORD2
+randomizeSpeed  KEYWORD2
+randomizePeak   KEYWORD2
+setColor        KEYWORD2
+setColors       KEYWORD2
+setMinHeight    KEYWORD2
+setMaxHeight    KEYWORD2
+setAscending    KEYWORD2
+setTiming       KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
